@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROCBind Theme Preview</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .preview-note {
+      background: #0f172a;
+      color: #fff;
+      font-size: 13px;
+      padding: 10px 18px;
+      text-align: center;
+    }
+    .preview-note a { color: #7dd3fc; }
+    .static-hero {
+      min-height: 620px;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.18)),
+        url("assets/hero-bg.jpg") center/cover;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+    .static-hero .container { position: relative; z-index: 1; }
+    .static-logo img { height: 44px; width: auto; }
+    .static-header {
+      background: #fff;
+      border-bottom: 1px solid rgba(15,23,42,.08);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    .static-header-inner {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .static-nav {
+      display: flex;
+      gap: 22px;
+      color: #475569;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .static-nav a:hover { color: var(--brand); }
+    @media (max-width: 760px) {
+      .static-nav { display: none; }
+      .static-hero { min-height: 560px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-note">
+    Static GitHub preview. Shopify checkout, theme editor data, and Liquid-only behavior are not active here.
+  </div>
+
+  <header class="static-header">
+    <div class="container static-header-inner">
+      <a class="static-logo" href="#"><img src="assets/logo.png" alt="ROCBind"></a>
+      <nav class="static-nav">
+        <a href="#products">Products</a>
+        <a href="#applications">Applications</a>
+        <a href="#swatches">Stone Colors</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-primary" href="#products">Order Sample Kit</a>
+    </div>
+  </header>
+
+  <section class="static-hero">
+    <div class="container">
+      <div style="max-width:720px">
+        <div class="eyebrow">ROCBind Resin Bound Washed Stone</div>
+        <h1 class="hero-title">Transform Plain Concrete <span>Into a Natural Stone Look</span></h1>
+        <p class="hero-subtitle">Compare real stone colors, test small areas, and plan patios, pool decks, garden paths, and front yard projects with confidence.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">Order Sample Kit</a>
+          <a class="btn btn-secondary" href="#swatches">View Colors</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="container">
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-card-image"><img src="assets/product-sample-kit.jpg" alt="Sample kit"></div>
+          <div class="product-card-body">
+            <h3>ROCBind Resin Bound Washed Stone Sample Kit</h3>
+            <p>Paid washed stone sample for checking real color, aggregate size, and resin-bound finish before a larger patio, path, or courtyard project.</p>
+          </div>
+          <div class="product-card-footer"><a class="btn-white" href="#swatches">Order Now</a></div>
+        </article>
+        <article class="product-card">
+          <div class="product-card-image"><img src="assets/product-diy-kit.jpg" alt="DIY kit"></div>
+          <div class="product-card-body">
+            <h3>ROCBind Resin Bound Washed Stone 8kg Kit</h3>
+            <p>8kg resin-bound washed stone kit for patios, garden paths, courtyards, walkways, display boards, and small-area testing.</p>
+          </div>
+          <div class="product-card-footer"><a class="btn-white" href="#swatches">Order Now</a></div>
+        </article>
+        <article class="product-card">
+          <div class="product-card-image"><img src="assets/dealer-program.jpg" alt="Dealer program"></div>
+          <div class="product-card-body">
+            <h3>Dealer Program</h3>
+            <p>Exclusive pricing, marketing support, and sample benefits for professional landscape designers, general contractors, and local dealers.</p>
+          </div>
+          <div class="product-card-footer"><a class="btn-white" href="#swatches">Learn More</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section applications-section" id="applications">
+    <div class="container">
+      <div class="text-center" style="max-width:640px;margin:0 auto 48px">
+        <h2 class="section-title">Popular Applications</h2>
+        <p class="section-subtitle">Natural washed stone finishes for patios, pool decks, garden paths, and front yard entries.</p>
+      </div>
+      <div class="application-grid">
+        <article class="application-card"><img src="assets/scene-patio.jpg" alt="Backyard patio"><h3>Backyard Patio</h3></article>
+        <article class="application-card"><img src="assets/scene-pool.jpg" alt="Pool deck"><h3>Pool Deck</h3></article>
+        <article class="application-card"><img src="assets/scene-garden.jpg" alt="Garden path"><h3>Garden Path</h3></article>
+        <article class="application-card"><img src="assets/scene-entry.jpg" alt="Front yard entry"><h3>Front Yard Entry</h3></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section swatch-section" id="swatches">
+    <div class="container">
+      <div class="text-center" style="max-width:640px;margin:0 auto 64px">
+        <h2 class="section-title">18 Real Stone Colors</h2>
+        <p class="section-subtitle">Preview the current homepage swatch images and matching product labels.</p>
+      </div>
+      <div class="swatch-grid" id="stone-swatches-grid">
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-001.jpg" width="294" height="294" alt="Yellow Gold / 2-3mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Yellow Gold / 2-3mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Yellow gold washed stone</p><p class="swatch-desc">Yellow Gold washed stone in 2-3mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-002.jpg" width="294" height="294" alt="Yellow Gold / 3-5mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Yellow Gold / 3-5mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Yellow gold washed stone</p><p class="swatch-desc">Yellow Gold washed stone in 3-5mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-003.jpg" width="294" height="294" alt="Yellow Gold / 4-6mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Yellow Gold / 4-6mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Yellow gold washed stone</p><p class="swatch-desc">Yellow Gold washed stone in 4-6mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-004.jpg" width="294" height="294" alt="Red / 2-3mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Red / 2-3mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Red washed stone</p><p class="swatch-desc">Red washed stone in 2-3mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-005.jpg" width="294" height="294" alt="Red / 3-5mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Red / 3-5mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Red washed stone</p><p class="swatch-desc">Red washed stone in 3-5mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-006.jpg" width="294" height="294" alt="Red / 4-6mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Red / 4-6mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Red washed stone</p><p class="swatch-desc">Red washed stone in 4-6mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-007.jpg" width="294" height="294" alt="Natural Gray / 2-3mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Natural Gray / 2-3mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Natural gray washed stone</p><p class="swatch-desc">Natural Gray washed stone in 2-3mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-008.jpg" width="294" height="294" alt="Natural Gray / 3-5mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Natural Gray / 3-5mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Natural gray washed stone</p><p class="swatch-desc">Natural Gray washed stone in 3-5mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-009.jpg" width="294" height="294" alt="Natural Gray / 4-6mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Natural Gray / 4-6mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Natural gray washed stone</p><p class="swatch-desc">Natural Gray washed stone in 4-6mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-010.jpg" width="294" height="294" alt="Black / 2-3mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Black / 2-3mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Black washed stone</p><p class="swatch-desc">Black washed stone in 2-3mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-011.jpg" width="294" height="294" alt="Black / 3-5mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Black / 3-5mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Black washed stone</p><p class="swatch-desc">Black washed stone in 3-5mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-012.jpg" width="294" height="294" alt="Black / 4-6mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Black / 4-6mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Black washed stone</p><p class="swatch-desc">Black washed stone in 4-6mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-013.jpg" width="294" height="294" alt="White / 2-3mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>White / 2-3mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">White washed stone</p><p class="swatch-desc">White washed stone in 2-3mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-014.jpg" width="294" height="294" alt="White / 3-5mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>White / 3-5mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">White washed stone</p><p class="swatch-desc">White washed stone in 3-5mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-015.jpg" width="294" height="294" alt="White / 4-6mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>White / 4-6mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">White washed stone</p><p class="swatch-desc">White washed stone in 4-6mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-016.jpg" width="294" height="294" alt="Light Gray / 2-3mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Light Gray / 2-3mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Light gray washed stone</p><p class="swatch-desc">Light Gray washed stone in 2-3mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-017.jpg" width="294" height="294" alt="Light Gray / 3-5mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Light Gray / 3-5mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Light gray washed stone</p><p class="swatch-desc">Light Gray washed stone in 3-5mm, matched to the displayed sample image.</p></article>
+        <article class="swatch-card"><div class="swatch-color swatch-color--image"><img class="swatch-image" src="assets/stone-sample-018.jpg" width="294" height="294" alt="Light Gray / 4-6mm"><div class="swatch-hover"><span>Get Design Tips</span></div></div><div class="swatch-name"><span>Light Gray / 4-6mm</span><span class="swatch-tag">$200.00</span></div><p class="swatch-type">Light gray washed stone</p><p class="swatch-desc">Light Gray washed stone in 4-6mm, matched to the displayed sample image.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="text-center" style="max-width:640px;margin:0 auto 48px">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">From project concepts to walking on solid beautiful stones, support is available end to end.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card"><span>1</span><h3>Order Samples</h3><p>Choose a sample kit or DIY test kit.</p></article>
+        <article class="step-card"><span>2</span><h3>Compare at Home</h3><p>See real colors in your own lighting conditions.</p></article>
+        <article class="step-card"><span>3</span><h3>Submit Details</h3><p>Share dimensions, site photos, and project notes.</p></article>
+        <article class="step-card"><span>4</span><h3>Receive Quote</h3><p>Get bulk pricing and project recommendations.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="text-center" style="max-width:640px;margin:0 auto 48px">
+        <h2 class="section-title">FAQ</h2>
+        <p class="section-subtitle">Static preview of common homepage content.</p>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item"><button class="faq-question">What is resin-bound stone surfacing?</button><div class="faq-answer open"><p>Clean natural aggregates are blended with clear resin and troweled over stable bases.</p></div></article>
+        <article class="faq-item"><button class="faq-question">Is it suitable for pools and driveways?</button><div class="faq-answer open"><p>Yes, with proper base preparation, thickness, and resin system selection.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="container footer-bottom">
+      <p>ROCBind static GitHub preview. Use Shopify preview for final validation.</p>
+    </div>
+  </footer>
+</body>
+</html>
